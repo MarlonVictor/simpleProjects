@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div id="calculator_grid">
+
+        <div id="display">
+            <div id="display_up"></div>
+            <div id="display_down"></div>
+        </div>
+        
+        <button onclick="clearAll()">C</button>
+        <button onclick="pressOperator(this)">÷</button>
+        <button onclick="pressOperator(this)">x</button>
+        <button onclick="pressDelete()"><i class="fas fa-backspace"></i></button>
+        <button onclick="pressNum(this)">7</button>
+        <button onclick="pressNum(this)">8</button>
+        <button onclick="pressNum(this)">9</button>
+        <button onclick="pressOperator(this)">-</button>
+        <button onclick="pressNum(this)">4</button>
+        <button onclick="pressNum(this)">5</button>
+        <button onclick="pressNum(this)">6</button>
+        <button onclick="pressOperator(this)">+</button>
+        <button onclick="pressNum(this)">1</button>
+        <button onclick="pressNum(this)">2</button>
+        <button onclick="pressNum(this)">3</button>
+        <button onclick="pressEqual()" class="span_two_y">=</button>
+        <button onclick="pressNum(this)" class="span_two_x">0</button>
+        <button onclick="pressNum(this)">.</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
