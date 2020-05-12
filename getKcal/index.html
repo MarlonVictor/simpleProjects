@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GetKcal</title>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <img src="https://raw.githubusercontent.com/maateusilva/getkcal/bfeb1bfa83e81ba3e779d474fe1a249d85c3c8d6/starterkit/assets/images/logo.svg" alt="logo">
+
+            <form id="form">
+                <fieldset>
+                    <label for="gender">Seu sexo</label><br>
+                    <select id="gender">
+                        <option value="mas">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+                </fieldset>
+            
+                <fieldset>
+                    <label for="age">Sua idade</label><br>
+                    <input type="number" id="age" autocomplete="off" max="100">
+                </fieldset>
+
+                <fieldset>
+                    <label for="weight">Seu peso</label><br>
+                    <input type="number" id="weight" autocomplete="off" min="45">
+                </fieldset>
+
+                <fieldset>
+                    <label for="height">Sua altura</label><br>
+                    <input type="number" id="height" min="100" autocomplete="off" placeholder="170">
+                </fieldset>
+
+                <fieldset>
+                    <label for="activity_level">Seu nível de atividade física</label><br>
+                    <select id="activity_level">
+                        <option value="1.2">Sedentário</option>
+                        <option value="1.375">Pouca atividade</option>
+                        <option value="1.55">Atividade moderada</option>
+                        <option value="1.725">Atividade intensa</option>
+                        <option value="1.9">Atividade muito intensa</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit">Calcular!</button>
+                </fieldset>
+            </form>
+            <div id="result"></div>
+        </div>
+        <div id="side"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
