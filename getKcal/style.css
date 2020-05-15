@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #d3d3d3;
+    background-color: #222;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+strong {
+    color: #FF7A6F;
+}
+
+#container {
+    display: flex;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    width: 80%;
+}
+
+#form {
+    display: grid;
+    grid-row: 50% 50%;
+    gap: 10px;
+    width: 50%;
+    margin: 30px 0;
+}
+
+#form fieldset {
+    border: none;
+    padding: 5px 0;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+}
+
+#form fieldset:nth-child(3), #form fieldset:nth-child(4) {
+    grid-column: span 2;
+}
+
+#form input, #form select, #form button {
+    margin: auto;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 200ms;
+    background-color: #111;
+    color: #d3d3d3;
+}
+
+#form input:focus, #form select:focus {
+    border: 1px solid #FF7A6F;
+    padding: 11px;
+}
+
+#form button {
+    background-image: linear-gradient(-90deg, #FF7373 0%, #FDDB33 100%);
+    color: #333;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 18px;
+    padding: 12px;
+}
+
+#form button:hover {
+    background-image: linear-gradient(-180deg, #FF7373 0%, #FDDB33 100%);
+}
+
+#result {
+    background-color: #111;
+    border-radius: 5px;
+    position: relative;
+    bottom: 15px;
+}
+
+#result .content {
+    padding: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+#result .content h2 {
+    padding-bottom: 5px;
+}
+
+#side {
+    background-image: url(https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: 70vh;
+    filter: brightness(50%);
+    width: 20%;
+    height: 655px;
+}
+
+@media (max-width: 1310px) {
+    #form select {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1050px) {
+    body {
+        overflow: scroll;
+    }
+    #form button {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 775px) {
+    #container {
+        display: block;
+        margin-left: 15%;
+    }
+    #form {
+        width: 80%;
+    }
+    #form fieldset:nth-child(5), #form fieldset:nth-child(6) {
+        grid-column: span 2;
+    }
+    #form button {
+        margin-top: 17px;
+    }
+    #side {
+        display: none;
+    }
+}
