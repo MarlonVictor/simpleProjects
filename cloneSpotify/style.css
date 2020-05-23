@@ -1,0 +1,240 @@
+body {
+    /* background: url('images/capa.png'),
+                url('images/ruido.png'),
+                linear-gradient(50deg,#ff4169, #7c26f8);
+    background-attachment: fixed; */
+    background-color: #FFCDD2;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*header*/
+.navbar-light {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 8px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #1ed760;
+}
+.navbar-light .navbar-toggler {
+    border: #fff;
+    outline: none;
+}
+li.nav-item.divisor {
+    width: 1px;
+    height: 20px;
+    line-height: 0.5px;
+    background: white;
+    margin: 10px 15px 0;
+}
+.gray {
+    filter: brightness(70%);
+}
+
+/*topo*/
+
+#home {
+    height: 95vh;
+}
+#home .capa {
+    margin-top: 125px;
+}
+.capa {
+    text-align: center;
+}
+.capa h1 {
+    font-weight: 900;
+    letter-spacing: -5px;
+    margin-bottom: 40px;
+    font-size: 75px;
+}
+.capa .subtitle {
+    font-weight: 800;
+    font-size: 25px;
+}
+.home-footer {
+    margin: 35px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.home-footer span {
+    text-decoration: underline;
+}
+.btn-custom {
+    margin: 40px 5px 0;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: 0.1s;
+    padding: 17px 48px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+.btn-custom:hover {
+    transform: scale(1.1,1.1);
+}
+.btn-gren {
+    color: #fff;
+    background-color: #1db954;
+}
+.btn-gren:hover {
+    color: #fff;
+    background-color: #1ed760;
+}
+.btn-none {
+    border: 2px solid #000;
+    color: #000; 
+}
+.btn-none:hover {
+    color: #000;
+}
+
+/*centro*/
+
+#center {
+    background: url('https://campaigns.scdn.co/images/hero-burst-mobile.svg') no-repeat center/878px 676px,linear-gradient(#F037A5 -60%,#FAE62D 140%);
+    height: 72vh;
+}
+#center .capa h1 {
+    color: #fff;
+    letter-spacing: -1px;
+}
+#center .capa .subtitle {
+    color: #fff;
+    font-weight: 500;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: #000;
+    padding: 100px 0 20px;
+    color: #fff;
+}
+footer img {
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 25px;
+}
+footer h4 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.8em;
+}
+footer .navbar-nav a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 100px;
+    position: relative;
+    right: 5px;
+}
+footer .navbar-nav a:hover {
+    color: #1ed760;
+}
+footer .navbar-nav, footer .navbar-nav li {
+    padding: 8px 0;
+}
+footer ul li {
+    float: right;
+    margin: 0 5px;
+    list-style: none;
+}
+
+footer .footer-botton span {
+    filter: brightness(70%);
+    margin: 120px 10px 40px;
+    font-size: 12px;
+    cursor: pointer;
+}
+footer .footer-botton span:hover {
+    color: #1ed760;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 545.98px) {
+    #home {
+        height: 100vh;
+    }
+    .navbar-light {
+        background-color: rgba(0,0,0,0.9);
+        padding: 5px 0;
+    }
+    .navbar-brand img {
+        padding-left: 15px;
+    }
+    .capa h1 {
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+    #homer .capa h1 {
+        margin: 40px 0 10px;
+    }
+    .capa .subtitle {
+        font-size: 15px;
+    }
+    a.btn {
+        display: block;
+        margin-bottom: -30px;
+    }
+    .home-footer {
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+    #center {
+        height: 45vh;
+        padding: 170px 0 200px;
+    }
+    #center a.btn {
+        font-size: 10px;
+    }
+    .foot h4 {
+        margin-top: 50px;
+    }
+    footer .col-md-4.foot img {
+        margin-top: 80px;
+    }
+    footer .footer-botton span {
+        margin: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 545.98px) and (max-width: 767.98px) {
+    #home {
+        height: 100vh;
+    }
+    .navbar-light {
+        background-color: rgba(0,0,0,0.9);
+        padding: 5px 0;
+    }
+    .capa h1 {
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+    #homer .capa h1 {
+        margin: 40px 0;
+    } 
+    .capa .subtitle {
+        font-size: 20px;
+    }
+    a.btn {
+        display: block;
+        margin-bottom: -30px;
+    }
+    .home-footer {
+        margin: 75px 0;
+    }
+    #center {
+        height: 50vh;
+        padding: 170px 0 200px;
+    }
+}
