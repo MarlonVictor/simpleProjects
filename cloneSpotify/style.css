@@ -39,7 +39,7 @@ li.nav-item.divisor {
 /*topo*/
 
 #home {
-    height: 95vh;
+    height: auto;
 }
 #home .capa {
     margin-top: 125px;
@@ -58,7 +58,7 @@ li.nav-item.divisor {
     font-size: 25px;
 }
 .home-footer {
-    margin: 35px 0;
+    margin: 35px 0 0;
     font-size: 12px;
     font-weight: 500;
 }
@@ -93,6 +93,36 @@ li.nav-item.divisor {
 }
 .btn-none:hover {
     color: #000;
+}
+
+/*tabela*/
+
+#tabela {
+    margin-top: 100px;
+}
+
+#tabela h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+#tabela p {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 0;
+}
+#tabela table {
+    width: 450px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#tabela td, #tabela th {
+    border: none;
+    border-bottom: 1px solid #666;
+}
+#tabela a {
+    margin-bottom: 100px;
 }
 
 /*centro*/
@@ -183,6 +213,12 @@ footer .footer-botton span:hover {
     a.btn {
         display: block;
         margin-bottom: -30px;
+    }
+    #tabela .btns {
+        margin: 50px 0;
+    }
+    #tabela a {
+        margin: 10px auto;
     }
     .home-footer {
         font-size: 10px;
