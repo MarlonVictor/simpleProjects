@@ -1,0 +1,88 @@
+button {
+    color: #fff;
+    margin-left: 5px;
+}
+body {
+    background-color: rgb(240, 240, 240);
+}
+header {
+    height: 150px;
+    background-image: url('https://picsum.photos/500');
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-fluid {
+    width: 35%;
+}
+.clear {
+    position: relative;
+    top: 120px;
+    right: 10px;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+#date {
+    color: #fff;
+    position: relative;
+    top: 120px;
+    left: 10px;
+    font-weight: 900;
+    max-width: 80%;
+}
+
+.icon {
+    background-color: red;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.icon.green {
+    background-color: green;
+}
+.check {
+    filter: brightness(80%);
+    background-color: #fff;
+    text-decoration: line-through;
+}
+
+
+#list {
+    height: 350px;
+    background-color: #fff;
+    overflow-x: auto;
+}
+#list li {
+    padding: 5px 10px;
+    font-weight: 900;
+}
+.add-item {
+    background-color: #ccc;
+    border: none;
+}
+.add-item i {
+    padding: 11px;
+}
+.add-item input {
+    width: 80%;
+}
+
+@media (max-width: 800px){
+    .container-fluid {
+        width: 70%;
+    }
+    .add-item input {
+        width: 88%;
+    }
+}
+@media (max-width: 500px){
+    .add-item input {
+        width: 84%;
+    }
+}
