@@ -1,0 +1,39 @@
+body {
+    background:#f8f9fa;
+}
+
+#output {
+    display:none;
+}
+
+i {
+    color:#007bff;
+}
+
+input[type=radio] {
+    width: 85px;
+    height: 30px;
+}
+
+input[type=radio]::after {
+    width: 85px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    content: attr(value);
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+input[type=radio]:hover::after, 
+input[type=radio]:checked::after {
+    background-color: #007bff;
+    color: #fff;
+}

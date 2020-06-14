@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="https://image.flaticon.com/icons/svg/899/899709.svg">
-    <style>body{background:#f8f9fa;}#output{display:none;}i{color:#007bff;}</style>
+    <link rel="stylesheet" href="style.css">
     <title>tempConverter</title>
 </head>
 
@@ -23,10 +23,13 @@
 
         <div class="input-area text-center pt-3">
             <div class="row">
-                <div class="col-md-6 mx-auto">
+                <div class="col-md-8 mx-auto">
                     <div class="form-group">
-                        <label for="temperatura" class="text-primary">Temperatura em °C</label>
-                        <input type="text" id="temperatura-input" class="form-control text-center">
+                        <input id="C" type="radio" name="temp" value="Celsius" checked>
+                        <input id="F" type="radio" name="temp" value="Fahrenheit">
+                        <input id="K" type="radio" name="temp" value="Kelvin">
+                        <input id="R" type="radio" name="temp" value="Rankine">
+                        <input type="number" id="temperatura-input" autocomplete="off" class="form-control text-center mt-2" placeholder="°C" min="0">
                     </div>
                 </div>
             </div>
