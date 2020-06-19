@@ -40,6 +40,16 @@ b {
     display: flex;
 }
 
+#piano-container em{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ccc;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
 #piano-container li {
     width: 14.28%;
     height: 100%;
