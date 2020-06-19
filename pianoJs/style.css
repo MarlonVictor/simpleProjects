@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle,  rgba(0, 204, 255, 0.61) 0%, rgb(0, 153, 255) 80%);
+}
+
+#piano {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 10% auto;
+    border-radius: 20px 20px 8px 8px;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.12);
+    border: 1px solid darken(#007bff, 30%);
+}
+
+h1 {
+    color: #f0f0f9;
+    font-family: 'MuseoModerno', cursive;
+    letter-spacing: 2px;
+    position: relative;
+    left: 86%;
+    transform: translateX(-50%);  
+}
+
+b {
+    color: rgb(0, 204, 255);
+} 
+
+#piano-container {
+    width: 95%;
+    height: 230px;
+    margin: 5px auto 0 auto;
+    display: flex;
+}
+
+#piano-container li {
+    width: 14.28%;
+    height: 100%;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+.white {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    background: #f0f0f9;
+}
+
+.white:active {
+    box-shadow: -1px 0 15px rgba(0, 0, 0, 0.7) inset;
+}
+
+.black {
+    position: absolute;
+    right: -35%;
+    z-index: 2;
+    width: 70%;
+    height: 120px;
+    background: #000;
+    box-shadow: 1px 0 #777, 0 2px 0 #777, 0 3px 0 #666, 0 4px 0 #555, 0 5px 0 #444, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.black:active {
+    box-shadow: 1px 0 #555, 0 1px 0 #555, 0 1px 0 #444, 0 2px 0 #333;
+}
+
+.playing {
+    transform: scale(0.98);
+    border-color: #007bff;
+    box-shadow: 0 0 1rem #007bff;
+}
+
+.key {
+    transition: transform 80ms ease;
+}
