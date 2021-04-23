@@ -88,6 +88,7 @@ strong {
     border-radius: 5px;
     position: relative;
     bottom: 15px;
+    margin-top: 30px;
 }
 
 #result .content {
@@ -102,10 +103,10 @@ strong {
 
 #side {
     background-image: url('https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: 70vh;
+    /* background-size: 70vh; */
     filter: brightness(50%);
     width: 20%;
-    height: 655px;
+    min-height: 100vh;
 }
 
 @media (max-width: 1310px) {
