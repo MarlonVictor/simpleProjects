@@ -1,0 +1,66 @@
+$primary: #26A69A;
+$hover: darken(#26A69A, 10);
+
+.player {
+    transform: translateX(-30px);
+    background-color: $primary;
+    transition: .4s;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+/**/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #000;
+}
+
+main.card {
+    position: relative;
+    width: 90%;
+    max-width: 375px;
+    background: #f8f9fa;
+    border-radius: 10px;
+
+    .card-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 10px 0 0;
+    }
+    .row {
+        margin-top: 30px;
+    }
+    .vol {
+        color: $primary;
+        position: relative;
+        top: 2px;
+        left: 5px;
+    }
+    a.btn-floating.btn-large.halfway-fab, 
+    a.btn-floating.btn-medium.halfway-fab {
+        @extend .player
+    }
+
+    a.btn-floating.btn-medium.halfway-fab {
+        transform: translateX(15px);
+    }
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) brightness(80%);
+    z-index: -2;
+}

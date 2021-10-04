@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/styles/main.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/915/915748.svg">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <title>musicPlayer</title>
+</head>
+
+<body>
+    <main class="card">
+        <div class="card-image">
+            <a href="#" class="btn-floating btn-large halfway-fab">
+                <i class="material-icons" id="play">play_arrow</i>        
+            </a>
+            <a href="#" class="btn-floating btn-medium halfway-fab">
+                <i class="material-icons" id="next">fast_forward</i>
+            </a>
+        </div>
+        <div class="card-content">
+            <h5>Title</h5>
+            <p class="artist">Artist</p>
+            <div class="row valign-wrapper">
+                <div class="col s2" id="current-duration">00:00</div>
+                <div class="col s6 range-field valign-wrapper">
+                    <input type="range" id="bar" min="0" max="0" step="1">
+                </div>
+                <div class="col s2" id="total-duration">00:00</div>
+                <div>
+                    <a href="#">
+                        <i class="material-icons vol">volume_up</i>
+                    </a>
+                </div>
+                <div class="col s3 range-field valign-wrapper">
+                    <input type="range" id="volume" min="0" max="100" step="1">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="background"></div>
+</body>
+</html>
